@@ -2,10 +2,10 @@ name: Bug Report
 description: Report an issue about COSMIC Epoch
 body:
   - type: markdown
-      value: |
-        Thank you for taking the time to fill out this bug report!
+    value: |
+      Thank you for taking the time to fill out this bug report!
 
-        If you want to request a feature or have a question, [please use a different form](https://github.com/pop-os/cosmic-epoch/issues/new/choose).
+      If you want to request a feature or have a question, [please use a different form](https://github.com/pop-os/cosmic-epoch/issues/new/choose).
   - type: checkboxes
   id: checkboxes
   attributes:
