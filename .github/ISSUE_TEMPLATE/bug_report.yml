@@ -1,0 +1,74 @@
+name: Bug Report
+description: Report an issue about COSMIC Epoch
+body:
+  - type: markdown
+      value: |
+        Thank you for taking the time to fill out this bug report!
+
+        If you want to request a feature or have a question, [please use a different form](https://github.com/pop-os/cosmic-epoch/issues/new/choose).
+  - type: checkboxes
+  id: checkboxes
+  attributes:
+    label: Checklist
+    required: true
+    options:
+      - label: I have searched for duplicate reports
+        description: Also search for similar keywords.
+        value: no_duplicate
+  - type: dropdown
+  id: distro
+  attributes:
+    label: What Distribution are you on?
+    options:
+      - label: Pop!_OS
+        value: pop-os
+      - label: Fedora
+        value: fedora
+      - label: Arch Linux
+        value: archlinux
+      - label: Other (please name in "extra information")
+        value: other
+    required: true
+  - type: textarea
+    id: describe-bug
+    attributes:
+      label: Describe the bug
+      placeholder: A clear and concise description of what the bug is.
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What did you expect to happen?
+      value: A clear and concise description of what you expected instead.
+      required: true
+  - type: textarea
+    id: version
+    attributes:
+      label: Affected packages
+      placeholder: |
+        Open the terminal to find the correct packages.
+
+        On Pop!_OS: `dpkg-query -W | grep cosmic`
+
+        On Fedora: `rpm -qa | grep cosmic`
+
+        Or follow your distros documentation. The packagename may be different.
+      render: shell
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: hardware
+      placeholder: |
+      Please add info about your hardware (optional)
+
+      You can find this in your systems settings.
+  - type: file
+  id: image_upload
+  attributes:
+    label: Upload Image
+  - type: textarea
+    id: extra-context
+    attributes:
+      label: Extra information or context
+      placeholder: Add any other context about the problem here.

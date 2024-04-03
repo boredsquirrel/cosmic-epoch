@@ -1,0 +1,10 @@
+issue_templates:
+  question.yml:
+    labels:
+      - question
+  bug_report.yml:
+    labels:
+      - bug
+  feature_request.yml:
+    labels:
+      - feature

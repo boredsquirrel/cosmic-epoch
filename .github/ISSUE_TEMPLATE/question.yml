@@ -1,0 +1,44 @@
+name: Bug Report
+description: Ask a question
+body:
+  - type: markdown
+      value: |
+        Here you can ask questions about the COSMIC Desktop.
+  - type: checkboxes
+  id: checkboxes
+  attributes:
+    label: Checklist
+    required: true
+    options:
+      - label: This question is not already asked or answered.
+        value: no_duplicate
+  - type: dropdown
+  id: distro
+  attributes:
+    label: What Distribution are you on?
+    options:
+      - label: Pop!_OS
+        value: pop-os
+      - label: Fedora
+        value: fedora
+      - label: Arch Linux
+        value: archlinux
+      - label: Other (please name in "extra information")
+        value: other
+    required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      required: true
+  - type: file
+  id: image_upload
+  attributes:
+    label: Upload an Image
+    placeholder: You can upload an image to make it clear what you mean.
+  - type: textarea
+    id: extra-context
+    attributes:
+      label: Extra information or context
+      placeholder: Add any other context about the question here.
+
