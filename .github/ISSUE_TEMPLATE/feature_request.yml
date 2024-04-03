@@ -1,0 +1,52 @@
+name: Bug Report
+description: Request a feature for the COSMIC Desktop
+body:
+  - type: markdown
+      value: Request a feature for the COSMIC Desktop
+  - type: checkboxes
+  id: checkboxes
+  attributes:
+    label: Checklist
+    required: true
+    options:
+      - label: I have searched for duplicate requests
+        value: no_duplicate
+      - label: This feature will be a benefit for many users
+        value: general_benefit
+      - label: This is about one feature, not multiple ones
+        value: singular
+  - type: dropdown
+  id: distro
+  attributes:
+    label: What Distribution are you on?
+    options:
+      - label: Pop!_OS
+        value: pop-os
+      - label: Fedora
+        value: fedora
+      - label: Arch Linux
+        value: archlinux
+      - label: Other (please name in "extra information")
+        value: other
+    required: true
+  - type: textarea
+    id: describe-feature
+    attributes:
+      label: Describe the Feature you imagine.
+      placeholder: Describe it's effects on usability, your ideas and possible issues you can imagine.
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Any alternatives that already exist?
+      value: Maybe this feature does not exist yet, but there is an alternative that could replace it.
+  - type: file
+  id: image_upload
+  attributes:
+    label: Upload an Image
+    description: A sketch, current problem or whatever you think may help.
+  - type: textarea
+    id: extra-context
+    attributes:
+      label: Extra information or context
+      placeholder: Add any other context about the problem here.
